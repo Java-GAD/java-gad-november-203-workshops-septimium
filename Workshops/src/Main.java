@@ -11,8 +11,21 @@ public class Main {
             System.out.println();
         }
     }
+
+    public static void printRightTriangle(int l) {
+        for(int i = 0; i<=l; i++){
+            int aux = i;
+            while(aux!=0){
+                System.out.print('*');
+                aux--;
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Hello world!\n");
         printHollowPattern(6, 6);
+        printRightTriangle(5);
     }
 }
