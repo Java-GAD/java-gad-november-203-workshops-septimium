@@ -13,7 +13,7 @@ public class Main {
     }
 
     public static void printRightTriangle(int l) {
-        for(int i = 0; i<=l; i++){
+        for(int i = 1; i<=l; i++){
             int aux = i;
             while(aux!=0){
                 System.out.print('*');
@@ -26,6 +26,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!\n");
         printHollowPattern(6, 6);
+        System.out.println();
         printRightTriangle(5);
     }
 }
